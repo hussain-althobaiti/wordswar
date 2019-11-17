@@ -1,0 +1,84 @@
+
+html ,body { height: 100%; }
+
+body{
+    background:black;
+    background-image: url("../imgs/main-min.gif");
+    background-repeat: repeat;
+    background-size: 400px 400px;
+  
+    margin: 0px;
+    color: #00FF41;
+    display: grid;
+    grid-template-rows: 3fr 2fr 1fr;
+}
+
+
+/*landing page start */
+
+#startButton ,#mainTitle{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10%;
+}
+
+
+#mainTitle{
+    font-family: 'Courier New';
+    font-size: 75px;
+
+}
+#startButton{
+    margin:20px ;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #00ff41;
+    border: #00FF41 1px solid;
+    font-family: 'Courier New';
+    font-size: 20px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*landing page end */
+
+/* index page start */
+
+.PlayGround{
+    display: grid;
+    text-align: center;
+    font-family: 'Courier New';
+    border: #00FF41 1px solid;
+    margin-bottom:15px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.inputBox{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: #00FF41 1px solid;
+}
+#mainInputBox{
+    text-align: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    font-family: 'Courier New';
+    font-style: bold;
+    font-size: 50px;
+    color: #00FF41;
+}
+
+#score,#trys{
+    display: inline-block;
+}
+/* index page end */
