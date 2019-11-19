@@ -20,7 +20,7 @@ $(document).ready(function(){
     };
 
     nextword();
-    
+
     $("#mainInputBox").keypress(function(e){
         var keycode = (e.keyCode ? e.keyCode : e.which);
         if (keycode == '13') {
@@ -54,5 +54,21 @@ $(document).ready(function(){
         }
     }
 
+    //timer
+//     var count=30; // global var
+// $(document).ready(function(){
+//     var $input = $("#test"); // catch id 
+        
+//     function countTime(){
+        
+//         count--;
+//         $input.text(count);
+//     }
+
+//     setInterval(countTime,1000)
+
+//     // console.log(0 == "0");
+//     // console.log(0 === "0");
+// })
 
  });
