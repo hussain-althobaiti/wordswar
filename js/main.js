@@ -6,6 +6,7 @@ var score =0;
 var highScore;
 var trys=3;
 var word;
+var count=30;
 $(document).ready(function(){
     $('#score').html("<h2>score : "+score+"</h2>");
     $('#trys').html("<h2>trys : "+trys+"</h2>");
@@ -21,12 +22,23 @@ $(document).ready(function(){
 
     nextword();
 
+
+    function countTime(){
+       if(count!==0) {
+           count--;
+        $("#time").html("<h2>time : "+count+"</h2>");
+        }else{
+            checktrys(0);
+        }
+    }
+    countTime();
+    setInterval(countTime,1000);
+
     $("#mainInputBox").keypress(function(e){
         var keycode = (e.keyCode ? e.keyCode : e.which);
         if (keycode == '13') {
 
             data = $("#mainInputBox").val();
-
             if(data==word){
                 score +=1;
                 $('#score').html("<h2>score : "+score+"</h2>");
@@ -48,24 +60,28 @@ $(document).ready(function(){
             alert("Game Over"+" your score is "+score+" the high Score is "+highScore);
             score=0;
             trys=3;
+            count=30;
             $('#score').html("<h2>score : "+score+"</h2>");
             location.reload(true);
             //setInterval() Method
         }
-    }
+
+    
+
+        }
 
     //timer
 //     var count=30; // global var
 // $(document).ready(function(){
-//     var $input = $("#test"); // catch id 
+//    var $input = $("#time");  // catch id 
         
-//     function countTime(){
+    // function countTime(){
         
-//         count--;
-//         $input.text(count);
-//     }
+    //     count--;
+    //     $input.text(count);
+    // }
 
-//     setInterval(countTime,1000)
+    // setInterval(countTime,1000)
 
 //     // console.log(0 == "0");
 //     // console.log(0 === "0");
