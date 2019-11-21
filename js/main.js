@@ -26,7 +26,7 @@ $(document).ready(function(){
     function countTime(){
        if(count!==0) {
            count--;
-        $("#time").html("<h2>time : "+count+"</h2>");
+        $("#time").html("<h2>time :  "+count+" </h2>");
         }else{
             checktrys(0);
         }

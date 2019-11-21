@@ -78,7 +78,7 @@ footer{
     color: #00FF41;
 }
 
-#score,#trys{
+#score,#trys,#time{
     display: inline-block;
 }
 /* index page end */
