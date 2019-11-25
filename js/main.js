@@ -7,10 +7,22 @@ var highScore;
 var trys=3;
 var word;
 var count=30;
+
+
+// $.getJSON('./words.json', function(data){
+//     var items = [];
+//     $.each( data, function( val ) {
+//         items.push(val);
+//         });
+//     });
+
+// console.log(items);
+
 $(document).ready(function(){
     $('#score').html("<h2>score : "+score+"</h2>");
     $('#trys').html("<h2>trys : "+trys+"</h2>");
-
+    $("#time").html("<h2>time :  "+count+" </h2>");
+    setInterval(countTime,1000);
 
     function nextword(){
         var Random =Math.floor(Math.random() * wordlist.length);
@@ -27,17 +39,16 @@ $(document).ready(function(){
        if(count!==0) {
            count--;
         $("#time").html("<h2>time :  "+count+" </h2>");
+
         }else{
             checktrys(0);
         }
     }
-    countTime();
-    setInterval(countTime,1000);
 
     $("#mainInputBox").keypress(function(e){
         var keycode = (e.keyCode ? e.keyCode : e.which);
         if (keycode == '13') {
-
+            countTime();
             data = $("#mainInputBox").val();
             if(data==word){
                 score +=1;
