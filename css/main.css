@@ -1,18 +1,16 @@
 
-html ,body { height: 100%; }
+html ,body { height: 95%; }
 
 body{
     background:black;
     background-image: url("../imgs/main-min.gif");
     background-repeat: repeat;
     background-size: 400px 400px;
-  
     margin: 0px;
     color: #00FF41;
     display: grid;
     grid-template-rows: 3fr 2fr 1fr;
 }
-
 
 /*landing page start */
 
@@ -25,10 +23,11 @@ body{
     margin-top: 10%;
 }
 
-
+  
 #mainTitle{
     font-family: 'Courier New';
     font-size: 75px;
+    text-align: center;
 
 }
 #startButton{
@@ -40,8 +39,11 @@ body{
     font-family: 'Courier New';
     font-size: 20px;
 }
-
-
+#startButton:hover{
+    background:#00ff41;
+    color: black;
+    font-size: 24px;
+}
 footer{
     display: flex;
     justify-content: center;
@@ -61,7 +63,10 @@ footer{
     margin-bottom:15px;
     background: rgba(0, 0, 0, 0.7);
 }
-
+audio{
+    background-color: black;
+    border:#00FF41 1px solid;
+}
 .inputBox{
     display: flex;
     justify-content: center;
@@ -82,3 +87,47 @@ footer{
     display: inline-block;
 }
 /* index page end */
+
+
+/* animation start  */
+
+.color-change-5x {
+	-webkit-animation: color-change-5x 8s linear infinite alternate both;
+	        animation: color-change-5x 8s linear infinite alternate both;
+}
+ @-webkit-keyframes color-change-5x {
+    0% {
+      background: #19dcea;
+    }
+    25% {
+      background: #b22cff;
+    }
+    50% {
+      background: #ea2222;
+    }
+    75% {
+      background: #f5be10;
+    }
+    100% {
+      background: #3bd80d;
+    }
+  }
+  @keyframes color-change-5x {
+    0% {
+      background: #19dcea;
+    }
+    25% {
+      background: #b22cff;
+    }
+    50% {
+      background: #ea2222;
+    }
+    75% {
+      background: #f5be10;
+    }
+    100% {
+      background: #3bd80d;
+    }
+  }
+
+  /* animation end  */
