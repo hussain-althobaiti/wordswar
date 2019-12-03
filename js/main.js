@@ -66,7 +66,7 @@ setpanel();
                 score +=1;
                 $('#score').html("<h2>score : "+score+"</h2>");
                 count+=5;
-                $('#panel').html('<h2 class="shake-little shake-constant shake-constant--hover">added to your time +5 '+count+'</h2>');
+                $('#panel').html('<h2 class="shake-slow shake-constant shake-constant--hover">added to your time +5 '+count+'</h2>');
 
                 nextword();
                 
