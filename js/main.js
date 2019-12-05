@@ -19,7 +19,7 @@ var count=30;
 //   console.log(items[5]);
 
 function playAudio(){
-    var track = new Audio ("/wordswar/audio/candy-mccain-min.mp3");
+    var track = new Audio ("/wordswar/audio/Networked Computer (SKAM Italia Soundtrack) by Alexis Smith& Joe Henson-min.mp3");
     track.play();
 };
 playAudio();
@@ -76,13 +76,20 @@ $("#mainInputBox").val("");
                 nextword();
                 
                 $("#mainInputBox").val("");
-                $('#mainInputBox').css("color","#00FF41");
+                $('#mainInputBox').css("background","#00FF41");
+                setTimeout(function() {
+                    $('#mainInputBox').css("background","rgba(0, 0, 0, 0.7)");
+                }, 100);
+                
 
             }else{
                 trys -=1;
                 checktrys(trys);
                 $('#trys').html("<h2>trys : "+trys+"</h2>");
-                $('#mainInputBox').css("color","red");
+                $('#mainInputBox').css("background","red");
+                setTimeout(function() {
+                    $('#mainInputBox').css("background","rgba(0, 0, 0, 0.7)");
+                }, 100);
             };
         }
     });

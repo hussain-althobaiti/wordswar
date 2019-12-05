@@ -52,7 +52,7 @@ footer{
 
 /* index page start */
 
-.PlayGround{
+#PlayGround{
     display: grid;
     text-align: center;
     font-family: 'Courier New';
@@ -64,7 +64,7 @@ audio{
     background-color: black;
     border:#00FF41 1px solid;
 }
-.inputBox{
+#inputBox{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -79,6 +79,7 @@ audio{
     font-size: 50px;
     color: #00FF41;
 }
+
 
 #score,#trys,#time{
     display: inline-block;
