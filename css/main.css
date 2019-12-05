@@ -1,12 +1,11 @@
 
-html ,body { height: 95%; }
+html ,body { height: 98%; width: 99%; }
 
 body{
     background:black;
     background-image: url("../imgs/main-min.gif");
     background-repeat: repeat;
     background-size: 400px 400px;
-    margin: 0px;
     color: #00FF41;
     display: grid;
     grid-template-rows: 3fr 2fr 1fr;
@@ -15,21 +14,20 @@ body{
 /*landing page start */
 
 #startButton ,#mainTitle{
-    
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: 10%;
+    margin-top: 10%;  
 }
 
   
 #mainTitle{
-    font-family: 'Courier New';
+    font-family: "molten",'Courier New';
     font-size: 75px;
     text-align: center;
-
 }
+
 #startButton{
     margin:20px ;
     padding: 20px;
@@ -42,7 +40,6 @@ body{
 #startButton:hover{
     background:#00ff41;
     color: black;
-    font-size: 24px;
 }
 footer{
     display: flex;
@@ -97,37 +94,48 @@ audio{
 }
  @-webkit-keyframes color-change-5x {
     0% {
-      background: #19dcea;
+      color: #19dcea;
     }
     25% {
-      background: #b22cff;
+      color: #b22cff;
     }
     50% {
-      background: #ea2222;
+      color: #ea2222;
     }
     75% {
-      background: #f5be10;
+      color: #f5be10;
     }
     100% {
-      background: #3bd80d;
+      color: #3bd80d;
     }
   }
   @keyframes color-change-5x {
     0% {
-      background: #19dcea;
+      color: #19dcea;
     }
     25% {
-      background: #b22cff;
+      color: #b22cff;
     }
     50% {
-      background: #ea2222;
+      color: #ea2222;
     }
     75% {
-      background: #f5be10;
+      color: #f5be10;
     }
     100% {
-      background: #3bd80d;
+      color: #3bd80d;
     }
   }
-
+@media screen and (max-height:400px){
+  footer{
+  display: none;
+}
+}
   /* animation end  */
+
+  @font-face {
+    font-family: "molten";
+    src: url(/font/molten.ttf);
+  }
+  
+  

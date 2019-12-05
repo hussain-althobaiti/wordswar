@@ -27,8 +27,8 @@ playAudio();
 $(document).ready(function(){
     function setpanel(){
     $('#panel').html('<div class="shake-little shake-constant shake-constant--hover"><div id="time"></div> <div id="score"></div><div id="trys"></div></div>')
-    $('#score').html("<h2>score : "+score+"</h2>");
-    $('#trys').html("<h2>trys : "+trys+"</h2>");
+    $('#score').html("<h2> score : "+score+"  </h2>");
+    $('#trys').html("<h2> trys : "+trys+"</h2>");
     $("#time").html("<h2>time :  "+count+" </h2>");
 }
 setpanel();
@@ -52,7 +52,12 @@ setpanel();
             checktrys(0);
         }
     }
-
+ function rainbow(){
+$("#mainInputBox").attr("class","color-change-5x");
+$('#panel').attr("class","color-change-5x");
+$('#words').attr("class","color-change-5x");
+$("#mainInputBox").val("");
+};
     $("#mainInputBox").keypress(function(e){
         var keycode = (e.keyCode ? e.keyCode : e.which);
         setpanel();
@@ -60,13 +65,13 @@ setpanel();
             countTime();
             data = $("#mainInputBox").val();
             
-            if(data=="rainbow"){
-                $("input").html("id='color-change-5x'");
+            if(data==="rainbow"){
+                rainbow();
             }else if(data==word){
                 score +=1;
-                $('#score').html("<h2>score : "+score+"</h2>");
+                $('#score').html("<h2>score : "+score+"  </h2>");
                 count+=5;
-                $('#panel').html('<h2 class="shake-slow shake-constant shake-constant--hover">added to your time +5 '+count+'</h2>');
+                $('#panel').html('<h2 class="shake-little shake-constant shake-constant--hover">added to your time +5 '+count+'</h2>');
 
                 nextword();
                 
@@ -88,7 +93,7 @@ setpanel();
             score=0;
             trys=3;
             count=30;
-            $('#score').html("<h2>score : "+score+"</h2>");
+            $('#score').html("<h2>score : "+score+"  </h2>");
             location.reload(true);
             //setInterval() Method 
         }
