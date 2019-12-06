@@ -3,7 +3,6 @@ var wordlist =["abandon","abash","abate","abide","absorb","accept","accompany","
 
 var data="";
 var score =0;
-var lastScore;
 var trys=3;
 var word;
 var count=30;
@@ -87,9 +86,11 @@ $("#mainInputBox").val("");
 
     function checktrys(tryCount){
         if(tryCount === 0){
-            // alert("Game Over"+" your score is "+score);
-            alert("Game Over"+" your score is "+score+" the last Score is "+lastScore);
-            score===lastScore;
+            var HighScore = localStorage.getItem("HighScore");
+            alert("Game Over"+" your score is "+score+" your Highest Score is "+HighScore);
+            if(score>HighScore){
+            localStorage.setItem("HighScore", score);
+            }
             score=0;
             trys=3;
             count=30;
