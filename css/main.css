@@ -35,7 +35,7 @@ body{
     color: #00ff41;
     border: #00FF41 1px solid;
     font-family: 'Courier New';
-    font-size: 20px;
+    font-size: 25px;
 }
 #startButton:hover{
     background:#00ff41;
@@ -130,6 +130,12 @@ audio{
 @media screen and (max-height:400px){
   footer{
   display: none;
+}
+
+}
+@media screen and (max-width:600px){
+#score,#trys,#time{
+  font-size: 13;
 }
 }
   /* animation end  */
