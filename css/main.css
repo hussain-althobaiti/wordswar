@@ -13,7 +13,7 @@ body{
 
 @font-face {
   font-family: "ARCADECLASSIC";
-  src: url(/font/ARCADECLASSIC.TTF);
+  src: url(/font/ARCADECLASSIC.ttf);
 }
 .egg{
   font-family: "ARCADECLASSIC",'Courier New';
