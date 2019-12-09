@@ -57,6 +57,9 @@ $("#mainInputBox").val("");
             if(data==="rainbow"){
                 rainbow();
             }
+            if(data=="42" || data=="what is the meaning of life"){
+                window.location.href = "/42.html";
+            }
             else if(data==word){
                 score +=1;
                 $('#score').html("<h2>score : "+score+"  </h2>");
