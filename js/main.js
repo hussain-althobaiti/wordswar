@@ -16,7 +16,7 @@ playAudio();
 $(document).ready(function(){
     function setpanel(){
     $('#panel').html('<div class="shake-little shake-constant shake-constant--hover"><div id="time"></div> <div id="score"></div><div id="trys"></div></div>')
-    $('#score').html("<h2> |   score : "+score+"   | </h2>");
+    $('#score').html("<h2> /   score : "+score+"   / </h2>");
     $('#trys').html("<h2> trys : "+trys+"</h2>");
     $("#time").html("<h2>time :  "+count+" </h2>");
 }
@@ -58,7 +58,7 @@ $("#mainInputBox").val("");
                 rainbow();
             }
             if(data=="42" || data=="what is the meaning of life"){
-                window.location.href = "../42.html";
+                window.location.href = "./wordswar/42.html";
             }
             else if(data==word){
                 score +=1;
@@ -99,7 +99,7 @@ $("#mainInputBox").val("");
             trys=3;
             count=30;
             $('#score').html("<h2>score : "+score+"  </h2>");
-            window.location.href = "../GameOver.html";
+            window.location.href = "./wordswar/GameOver.html";
             //setInterval() Method 
         }
     }
