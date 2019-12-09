@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+
 
 function GameOver(){
    var HighScore = localStorage.getItem("HighScore");
@@ -12,4 +12,4 @@ function GameOver(){
 GameOver();
 
 
-});
+
