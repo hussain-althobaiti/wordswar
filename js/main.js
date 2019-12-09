@@ -58,7 +58,7 @@ $("#mainInputBox").val("");
                 rainbow();
             }
             if(data=="42" || data=="what is the meaning of life"){
-                window.location.href = "./42.html";
+                window.location.href = "../42.html";
             }
             else if(data==word){
                 score +=1;
@@ -99,7 +99,7 @@ $("#mainInputBox").val("");
             trys=3;
             count=30;
             $('#score').html("<h2>score : "+score+"  </h2>");
-            window.location.href = "./gameover.html";
+            window.location.href = "../GameOver.html";
             //setInterval() Method 
         }
     }
