@@ -90,7 +90,8 @@ $("#mainInputBox").val("");
     function checktrys(tryCount){
         if(tryCount === 0){
             var HighScore = localStorage.getItem("HighScore");
-            alert("Game Over"+" your score is "+score+" your Highest Score is "+HighScore);
+            localStorage.setItem("lastScore", score);
+            // alert("Game Over"+" your score is "+score+" your Highest Score is "+HighScore);
             if(score>HighScore){
             localStorage.setItem("HighScore", score);
             }
@@ -98,7 +99,7 @@ $("#mainInputBox").val("");
             trys=3;
             count=30;
             $('#score').html("<h2>score : "+score+"  </h2>");
-            location.reload(true);
+            window.location.href = "/GameOver.html";
             //setInterval() Method 
         }
     }
