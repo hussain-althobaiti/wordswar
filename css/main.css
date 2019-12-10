@@ -156,18 +156,24 @@ audio{
       color: #3bd80d;
     }
   }
+  /* animation end  */
 @media screen and (max-height:400px){
   footer{
   display: none;
 }
 
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:501px){
 #score,#trys,#time{
   font-size: 15;
 }
-}
-  /* animation end  */
+.mainTitle{
+  font-size: 80px;
 
-  
+}
+
+#mainInputBox{
+  font-size: 15px;
+}
+}
   

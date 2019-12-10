@@ -99,7 +99,7 @@ $("#mainInputBox").val("");
             trys=3;
             count=30;
             $('#score').html("<h2>score : "+score+"  </h2>");
-            window.location.href = "/wordswar/GameOver.html";
+            window.location.href = "GameOver.html";
             //setInterval() Method 
         }
     }
