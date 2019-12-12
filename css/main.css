@@ -13,7 +13,7 @@ body{
 
 @font-face {
   font-family: "ARCADECLASSIC";
-  src: url(/font/ARCADECLASSIC.ttf);
+  /* src: url(/font/ARCADECLASSIC.ttf); */
 }
 .egg{
   font-family: "ARCADECLASSIC",'Courier New';
@@ -163,17 +163,23 @@ audio{
 }
 
 }
-@media screen and (max-width:501px){
-#score,#trys,#time{
-  font-size: 15;
-}
-.mainTitle{
-  font-size: 80px;
-
-}
-
-#mainInputBox{
-  font-size: 15px;
-}
+@media screen and (max-width:601px){
+  .mainTitle{
+    font-size: 80px;
+    
+  }
+  h2,h1{
+    font-size: 25px;
+  }
+  #mainInputBox{
+    font-size: 30px;
+  }
+  #words{
+    font-size: 30px;
+    
+  }
+  #score,#trys,#time{
+  font-size: 10px;
+  }
 }
   
