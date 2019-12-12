@@ -13,7 +13,7 @@ body{
 
 @font-face {
   font-family: "ARCADECLASSIC";
-  /* src: url(/font/ARCADECLASSIC.ttf); */
+  src: url(../font/ARCADECLASSIC.ttf); 
 }
 .egg{
   font-family: "ARCADECLASSIC",'Courier New';
@@ -174,8 +174,8 @@ audio{
   #mainInputBox{
     font-size: 30px;
   }
-  #words{
-    font-size: 30px;
+  #words h1{
+    font-size: 40px;
     
   }
   #score,#trys,#time{
