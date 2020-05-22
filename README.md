@@ -2,4 +2,4 @@
 
 https://hussain-althobaiti.github.io/wordswar/landing.html
 
-https://imgur.com/kJkjMHL
+https://i.imgur.com/kJkjMHL.mp4
